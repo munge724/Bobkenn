@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -17,10 +17,9 @@
   .nav{max-width:1120px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px;}
   .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-family:'Playfair Display',serif;font-weight:700;font-size:23px;letter-spacing:.2px;}
   .brand span{color:#ffd27d;}
-  .logo-upload{position:relative;display:grid;place-items:center;width:46px;height:46px;flex:0 0 46px;overflow:hidden;border:2px solid rgba(255,255,255,.75);border-radius:50%;background:#f2aa45;color:#174b39;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;cursor:pointer;}
-  .logo-upload img{width:100%;height:100%;object-fit:cover;}
-  .logo-upload input,.photo-upload input{position:absolute;width:1px;height:1px;opacity:0;}
-  .logo-upload:focus-within,.photo-upload:focus-within{outline:3px solid #f2aa45;outline-offset:3px;}
+  .brand-logo{width:46px;height:46px;flex:0 0 46px;object-fit:contain;border:2px solid rgba(255,255,255,.75);border-radius:50%;background:#fff;} 
+  .photo-upload input{position:absolute;width:1px;height:1px;opacity:0;}
+  .photo-upload:focus-within{outline:3px solid #f2aa45;outline-offset:3px;}
   .photo-section{padding:44px 0 30px;}
   .photo-grid{display:grid;grid-template-columns:1.35fr 1fr 1fr;gap:18px;}
   .photo-card{position:relative;min-height:240px;overflow:hidden;border-radius:20px;background:linear-gradient(145deg,#d9e8c9,#f8dca4);box-shadow:0 12px 30px rgba(34,68,48,.12);}
@@ -101,11 +100,7 @@
 <header class="topbar">
   <nav class="nav" aria-label="Main navigation">
     <div class="brand">
-      <label class="logo-upload" title="Choose a BobKen Tours logo">
-        <span>BK</span>
-        <img alt="BobKen Tours logo" hidden>
-        <input type="file" accept="image/*" aria-label="Upload BobKen Tours logo" data-preview>
-      </label>
+      <img class="brand-logo" src="images/bobken-logo.png" alt="BobKen Tours logo">
       <a class="brand" href="#home">BobKen <span>Tours</span></a>
     </div>
     <div class="nav-links">
@@ -120,25 +115,25 @@
   <section class="hero" id="home">
     <div class="hero-inner">
       <span class="eyebrow">Your Mara. Your people. Your adventure.</span>
-      <h1>Meet Ken &amp; Daisy ó a couple born for the wild.</h1>
+      <h1>Meet Ken &amp; Daisy ‚Äî a couple born for the wild.</h1>
       <p>From conservation work to the heart of the Masai Mara, we chose a life sharing the magic of the wild with you.</p>
-      <a class="button button-gold" href="#contact">Letís plan your safari</a>
+      <a class="button button-gold" href="#contact">Let‚Äôs plan your safari</a>
     </div>
   </section>
 
   <section class="photo-section wrap" aria-label="Safari photos">
     <div class="photo-grid">
       <div class="photo-card">
-        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">??</span><strong>BobKen Tours</strong><span>Add a photo of Ken and Daisy</span></div>
-        <label class="photo-upload">? Add team photo<input type="file" accept="image/*" aria-label="Upload a photo of BobKen Tours" data-preview></label>
+        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">üì∏</span><strong>BobKen Tours</strong><span>Add a photo of Ken and Daisy</span></div>
+        <label class="photo-upload">Ôºã Add team photo<input type="file" accept="image/*" aria-label="Upload a photo of BobKen Tours" data-preview></label>
       </div>
       <div class="photo-card">
-        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">??</span><strong>Wildlife</strong><span>Add a buffalo photo</span></div>
-        <label class="photo-upload">? Add buffalo photo<input type="file" accept="image/*" aria-label="Upload a buffalo photo" data-preview></label>
+        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">üêÉ</span><strong>Wildlife</strong><span>Add a buffalo photo</span></div>
+        <label class="photo-upload">Ôºã Add buffalo photo<input type="file" accept="image/*" aria-label="Upload a buffalo photo" data-preview></label>
       </div>
       <div class="photo-card">
-        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">??</span><strong>Safari vehicle</strong><span>Add a touring cruiser photo</span></div>
-        <label class="photo-upload">? Add cruiser photo<input type="file" accept="image/*" aria-label="Upload a touring cruiser photo" data-preview></label>
+        <div class="photo-placeholder"><span class="photo-icon" aria-hidden="true">üöô</span><strong>Safari vehicle</strong><span>Add a touring cruiser photo</span></div>
+        <label class="photo-upload">Ôºã Add cruiser photo<input type="file" accept="image/*" aria-label="Upload a touring cruiser photo" data-preview></label>
       </div>
     </div>
   </section>
@@ -147,11 +142,11 @@
     <div class="intro-copy">
       <p class="section-label">Our story</p>
       <h2>We followed our hearts back to the Mara.</h2>
-      <p>Before guiding guests across the sweeping grasslands of the Masai Mara, Ken and Daisy worked side by side in an international NGO focused on conservation and community development in East Africa. It was rewarding, important workóbut something was missing.</p>
+      <p>Before guiding guests across the sweeping grasslands of the Masai Mara, Ken and Daisy worked side by side in an international NGO focused on conservation and community development in East Africa. It was rewarding, important work‚Äîbut something was missing.</p>
       <p>They missed the wild: the dawn chorus, the thrill of spotting a lioness across golden grass, and the stillness of the savannah at sunset. So they founded <strong>BobKen Tours</strong>, a small, personal safari company rooted in a genuine love for the Mara and its wildlife.</p>
     </div>
     <aside class="highlight">
-      <span class="sun-icon" aria-hidden="true">??</span>
+      <span class="sun-icon" aria-hidden="true">‚òÄÔ∏è</span>
       <h3>Small team. Big heart.</h3>
       <p>Every guest is treated as a friend. Every game drive is planned with care. And every moment in the bush is shared with the same wonder as that first Mara sunrise.</p>
     </aside>
@@ -162,7 +157,7 @@
       <div class="section-heading">
         <p class="section-label">The people behind your safari</p>
         <h2>Meet your guides</h2>
-        <p>Two experts, one shared passionóand a personal welcome to the place they call home.</p>
+        <p>Two experts, one shared passion‚Äîand a personal welcome to the place they call home.</p>
       </div>
       <div class="guides">
         <article class="guide-card">
@@ -181,7 +176,7 @@
             <p class="role">Community development &amp; conservation</p>
           </div>
           <div class="guide-copy">
-            <p>Daisyís background in community development and conservation biology gives her an extraordinary eye for the ecological stories unfolding around every game drive. She loves sharing the birds, plants, and smaller wonders of the Mara.</p>
+            <p>Daisy‚Äôs background in community development and conservation biology gives her an extraordinary eye for the ecological stories unfolding around every game drive. She loves sharing the birds, plants, and smaller wonders of the Mara.</p>
             <p>Her storytelling can turn a wildlife sighting into a lifelong memory. Daisy also makes sure every guest feels at home, from the first message to the last farewell at the airstrip.</p>
           </div>
         </article>
@@ -190,8 +185,8 @@
   </section>
 
   <section class="quote">
-    <blockquote>ìWe left the NGO because we missed the smell of rain on the savannah, the weight of binoculars around our necks, and the look on a guestís face when they see their first elephant at dawn. This is what we were born to do.î
-      <cite>ó Ken &amp; Daisy, BobKen Tours</cite>
+    <blockquote>‚ÄúWe left the NGO because we missed the smell of rain on the savannah, the weight of binoculars around our necks, and the look on a guest‚Äôs face when they see their first elephant at dawn. This is what we were born to do.‚Äù
+      <cite>‚Äî Ken &amp; Daisy, BobKen Tours</cite>
     </blockquote>
   </section>
 
@@ -199,23 +194,23 @@
     <div class="wrap">
       <div class="contact-card">
         <p class="section-label">Your adventure starts here</p>
-        <h2>Letís plan your safari</h2>
-        <p>Every BobKen Tours experience begins with a personal conversation. Ken and Daisy respond to every enquiry themselvesóno booking agents, no call centres. WhatsApp is the quickest way to reach them.</p>
+        <h2>Let‚Äôs plan your safari</h2>
+        <p>Every BobKen Tours experience begins with a personal conversation. Ken and Daisy respond to every enquiry themselves‚Äîno booking agents, no call centres. WhatsApp is the quickest way to reach them.</p>
         <div class="contact-actions">
-          <a class="button button-gold" href="https://wa.me/254742000004" target="_blank" rel="noopener noreferrer" aria-label="Chat with BobKen Tours on WhatsApp">Chat on WhatsApp ∑ +254 742 000 004</a>
-          <a class="button button-light" href="mailto:senkishoyan@gmail.com" aria-label="Send an email to Ken and Daisy">Email Ken &amp; Daisy ∑ senkishoyan@gmail.com</a>
+          <a class="button button-gold" href="https://wa.me/254742000004" target="_blank" rel="noopener noreferrer" aria-label="Chat with BobKen Tours on WhatsApp">Chat on WhatsApp ¬∑ +254 742 000 004</a>
+          <a class="button button-light" href="mailto:senkishoyan@gmail.com" aria-label="Send an email to Ken and Daisy">Email Ken &amp; Daisy ¬∑ senkishoyan@gmail.com</a>
         </div>
         <div class="contact-details">
-          <div class="detail"><strong>?? Location</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Masai+Mara+National+Reserve%2C+Kenya" target="_blank" rel="noopener noreferrer">Masai Mara National Reserve, Kenya</a></div>
-          <div class="detail"><strong>??? Best time</strong>Year-round<br>Great Migration: JulyñOctober</div>
-          <div class="detail"><strong>?? Languages</strong>English, Swahili, Maa</div>
-          <div class="detail"><strong>?? Response</strong>Within 24 hours<br>WhatsApp preferred</div>
+          <div class="detail"><strong>üìç Location</strong><a href="https://www.google.com/maps/search/?api=1&amp;query=Masai+Mara+National+Reserve%2C+Kenya" target="_blank" rel="noopener noreferrer">Masai Mara National Reserve, Kenya</a></div>
+          <div class="detail"><strong>üå¶Ô∏è Best time</strong>Year-round<br>Great Migration: July‚ÄìOctober</div>
+          <div class="detail"><strong>üí¨ Languages</strong>English, Swahili, Maa</div>
+          <div class="detail"><strong>‚è±Ô∏è Response</strong>Within 24 hours<br>WhatsApp preferred</div>
         </div>
       </div>
     </div>
   </section>
 </main>
-<footer class="footer">Made with love for the Mara ∑ BobKen Tours</footer>
+<footer class="footer">Made with love for the Mara ¬∑ BobKen Tours</footer>
 <script>
   document.querySelectorAll('[data-preview]').forEach((input) => {
     input.addEventListener('change', () => {
@@ -233,12 +228,6 @@
           }
           image.src = reader.result;
           photoCard.classList.add('has-photo');
-        } else {
-          const logo = input.closest('.logo-upload');
-          const image = logo.querySelector('img');
-          image.src = reader.result;
-          image.hidden = false;
-          logo.querySelector('span').hidden = true;
         }
       };
       reader.readAsDataURL(file);
